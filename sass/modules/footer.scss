@@ -1,0 +1,88 @@
+.footer{
+	background-color: $primary-sky;
+	width: 100%;
+	height: 330px;
+	color: $primary-white;
+	
+	&__links {
+		width: 80%;
+		margin: auto;
+		height: 200px;
+		font-size: 0px;
+		padding-left: 12%;
+		white-space: nowrap;
+		&__part3{
+			font-size: 15px;
+			display: inline-block;
+			width: 33.3%;
+			height: 100%;
+			&__title{
+				color: $primary-white;
+			}
+			&__list{
+				list-style-type: none;
+				padding: 5px;
+				margin: 0;
+
+			}
+			&__list-item{
+				
+				margin: 0;
+				& a{
+					display: inline-block;
+					text-decoration: none;
+					color: $primary-white; 
+					padding: 2px;
+					border-bottom: 2px solid rgba(0,0,0,0);
+					
+				}
+				& a:hover{
+					border-bottom: 2px solid $primary-black;
+
+				}
+				
+			}
+
+
+		}
+	}
+
+}
+
+
+.social {
+	
+	text-align: center;
+
+	&__logo {
+		height: 50px;
+		width: 50px; 
+		display: inline-block;
+		margin: 5px; 
+	}
+
+	&__logo--facebook{
+		background-image: url("../images/facebook.png");
+		background-size: 50px 50px;
+	}
+	&__logo--youtube{
+		background-image: url("../images/youtube.png");
+		background-size: 50px 50px;
+		
+	}
+	&__logo--instagram{
+		background-image: url("../images/instagram.png");
+		background-size: 50px 50px;
+		
+	}
+	&__logo--linkedin{
+		background-image: url("../images/linkedin.png");
+		background-size: 50px 50px;
+	}
+}
+.copyright {
+	text-align: center;
+	color: $primary-white;
+	height: 60px;
+	line-height: 60px;
+}

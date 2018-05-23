@@ -1,0 +1,48 @@
+<header class="header">
+	<div class="primary-header">
+	<a href="index.html" class="site-logo"></a>
+	</div>
+
+	<nav class="main-nav">
+    <a href="index.html" class="site-icon hidden"></a>
+		<ul class="main-nav__list">
+			<li class="main-nav__list__item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+			<li class="main-nav__list__item"><a href="#">About Us</a></li>
+			<li class="main-nav__list__item"><a href="#">Services</a></li>
+			<li class="main-nav__list__item"><a href="#">Contact Us</a></li>
+		</ul>
+    <ul class="login-menu-list">
+      <li class="login-menu-list__item" id="login"><a href="#" >Login</a></li>
+      <li class="login-menu-list__item" >/</li>
+      <li class="login-menu-list__item" id="register"><a href="#" >Register</a></li>
+      <li class="login-menu-list__item hidden"><a href="#" >Account</a></li>
+      <li class="login-menu-list__item hidden"><a href="#" >Cart</a></li>
+    </ul>
+	</nav>
+
+</header>
+
+<div class="register modal">
+  <span class="reg-close">&times;</span>
+    <form  class="register modal__form modal__form--register" method="post" action="/users/registration">
+      <h2 class="modal__form__name"> Register</h2>
+      <input type="text" class="form-input" name="name" placeholder="Name"/><br>
+      <input type="text" class="form-input" name="email" placeholder="Email"/><br>
+      <input type="text" class="form-input" name="mobileNumber" placeholder="Mobile Number"/><br>
+      <input type="password" class="form-input" name="password" placeholder="password"/><br>
+      <input type="password" class="form-input" name="cpassword" placeholder="Confirm Password"/><br>
+       <input type="hidden" name="_csrf" value="{{ csrfToken }}"/>
+      <input type="submit" value="Submit" class="btn btn-submit">
+      <div class="modal__form__link">Already registered!  <a href="#" class="login2">Login Here</a></div>
+    </form></div>
+<div class="login modal">
+    <span class="log-close">&times;</span>
+    
+    <form class="login modal__form" method="post" action="/users/login">
+      <h2 class="modal__form__name"> Login </h2>
+	  <input type="text" class="form-input" name="id" placeholder="Email/Mobile Number"/><br>
+	  <input type="password" class="form-input" name="password" placeholder="Password"/><br>
+    <input type="hidden" name="_csrf" value="{{ csrfToken }}"/>
+	  <input type="submit" value="Submit" class="btn btn-submit">
+	  <div class="modal__form__link">Haven't registered yet? <a href="#" class="register2">Register Here</a></div>
+	</form></div>

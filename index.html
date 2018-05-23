@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Project-x" />
+    <meta property="og:type" content="Insurance" />
+    <meta property="og:url" content="http://Project-x.com/" />
+    <meta property="og:description" content="I am Sachin Soni" />
+    <meta property="og:image" content="http://Project-x.com/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Home - Happy Events" />
+	<title>PROJECT-X: COVER YOUR ACCESSORIES</title>
+	<link rel="stylesheet" href="css/style.css"/> 
+</head>
+
+<body>
+<header class="header">
+	<div class="primary-header">
+	<a href="index.html" class="site-logo"></a>
+	</div>
+
+	<nav class="main-nav">
+    <a href="index.html" class="site-icon hidden"></a>
+		<ul class="main-nav__list">
+			<li class="main-nav__list__item"><a href="#">Home</a></li>
+			<li class="main-nav__list__item"><a href="#">About Us</a></li>
+			<li class="main-nav__list__item"><a href="#">Services</a></li>
+			<li class="main-nav__list__item"><a href="#">Contact Us</a></li>
+		</ul>
+    <ul class="login-menu-list">
+      <li class="login-menu-list__item" id="login"><a href="#" >Login</a></li>
+      <li class="login-menu-list__item" >/</li>
+      <li class="login-menu-list__item" id="register"><a href="#" >Register</a></li>
+      <li class="login-menu-list__item hidden"><a href="#" >Account</a></li>
+      <li class="login-menu-list__item hidden"><a href="#" >Cart</a></li>
+    </ul>
+	</nav>
+
+</header>
+
+<div class="register modal">
+  <span class="reg-close">&times;</span>
+    <form  class="register modal__form modal__form--register"method="post" action="#">
+      <h2 class="modal__form__name"> Register</h2>
+      <input type="text" class="form-input" name="Name" placeholder="Name"/><br>
+      <input type="text" class="form-input" name="email" placeholder="Email"/><br>
+      <input type="text" class="form-input" name="mobileNumber" placeholder="Mobile Number"/><br>
+      <input type="password" class="form-input" name="password" placeholder="password"/><br>
+      <input type="password" class="form-input" name="confirm-password" placeholder="Confirm Password"/><br>
+      <input type="submit" value="Submit" class="btn btn-submit">
+      <div class="modal__form__link">Already registered!  <a href="#" class="login2">Login Here</a></div>
+    </form>
+</div>
+
+<div class="login modal">
+    <span class="log-close">&times;</span>
+    
+    <form class="login modal__form" method="post" action="#">
+      <h2 class="modal__form__name"> Login </h2>
+	  <input type="text" class="form-input" name="id" placeholder="Email/Mobile Number"/><br>
+	  <input type="password" class="form-input" name="password" placeholder="Password"/><br>
+	  <input type="submit" value="Submit" class="btn btn-submit">
+	  <div class="modal__form__link">Haven't registered yet? <a href="#" class="register2">Register Here</a></div>
+	</form>
+	
+</div>
+<section class="banner-display">
+  <video width="100%" class="banner-display__video" autoplay loop muted controls>
+	<source src="videos/afreen.mp4" type="video/mp4">
+	Your browser does not support HTML5 video.
+  </video>
+</section>
+<section class="service-form-container">
+  <div class="service-form-wrapper">
+    <div class="service-form"> 
+      <h2 class="service-form__title">Catalog</h2>
+      <p class="service-form__category">Choose a category</p>
+      <select name="category" class="service-form__category__select">
+      <option value="">Select a category</option>
+        <option value="volvo">Home Appliances</option>
+        <option value="saab">Mobiles and Laptops</option>
+        <option value="fiat">Automobiles</option>
+        <option value="audi">Plumbing</option>
+        <option value="audi">Furniture</option>
+      </select>
+      <br>
+      <p class="service-form__product">Choose a Product</p>
+      <select name="product" class="service-form__product__select">
+        <option value="">Select a product</option>
+        <option value="volvo">Home Appliances</option>
+        <option value="saab">Mobiles and Laptops</option>
+        <option value="fiat">Automobiles</option>
+        <option value="audi">Plumbing</option>
+        <option value="audi">Furniture</option>
+      </select>
+      <div class="service-form__nav">
+       <div class="service-form__nav__view-cart btn">View Cart</div>
+       <div class="service-form__nav__next btn">Next</div>
+      </div>
+    </div>
+    <div class="service-form"> 
+      <h2 class="service-form__title">Product Details</h2>
+      <p class="service-form__category">If all the products are same</p>
+      <input id="checkBox" type="checkbox">
+      <br>
+      <div class="selected-product">
+        <span class="selected-product__name">Name</span>
+        <input class="selected-product__quantity" type="Number" name="quantity" placeholder="Quantity" min="1" max="1000" />
+        <input class="selected-product__price" type="Number" name="price" placeholder="Price of purchase" min="1" max="50000000"/>
+        <input class="selected-product__year" type="Number" name="year" placeholder="Year of purchase"/>
+        <span class="selected-product__premium">Premium</span>
+      </div>
+      <div class="service-form__nav">
+        <div class="service-form__nav__back btn">Back</div>
+        <div class="service-form__nav__cal-premium btn">Calculate Premium</div>
+       <div class="service-form__nav__add-to-cart btn">Add to cart</div>
+      </div>
+    </div>
+  </div>
+</section>	
+<section class="contact-us">
+  
+</section>
+<footer class="footer">
+  <div class="footer__links">
+
+    <div class="footer__links__part3">
+      <h3 class="footer__links__part3__title"> Services</h3>
+      <ul class="footer__links__part3__list">
+        <li class="footer__links__part3__list-item"><a href="#"> Home Appliances</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Automobile</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Mobile & Laptops</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Plumbing</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Carpentry</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer__links__part3">
+      <h3 class="footer__links__part3__title"> Quick Links </h3>
+      <ul class="footer__links__part3__list">
+        <li class="footer__links__part3__list-item"><a href="#"> Cart</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> About Us</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Orders</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Track service</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Terms and condition</a></li>
+      </ul>
+    </div>
+    <div class="footer__links__part3">
+      <h3 class="footer__links__part3__title"> Contacts </h3>
+      <ul class="footer__links__part3__list">
+        <li class="footer__links__part3__list-item"><a href="#"> Contact Info</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Faq</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Address</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> Partners</a></li>
+        <li class="footer__links__part3__list-item"><a href="#"> abc</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="social">
+    <a class="social__logo social__logo--facebook" href="#"></a>
+    <a class="social__logo social__logo--youtube" href="#"></a>
+    <a class="social__logo social__logo--instagram" href="#"></a>
+    <a class="social__logo social__logo--linkedin" href="#"></a>
+  </div>
+  <div class="copyright">
+    &copy; copyright 2018 Modi Digitals
+  </div>
+
+</footer>
+<script type="text/javascript" src="js/vendors/jquery.min.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/service-form.js"></script>	
+</body>
+</html>

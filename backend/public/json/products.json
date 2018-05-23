@@ -1,0 +1,31 @@
+{
+"dataTitle": "service-form-products";
+list: [ { 
+	   	"category-name": "Home Applicance"
+	   	 "length": 5
+	   	 "values": ["Fan","AC","TV","Cooler","Washing-Machine"]
+	   	},
+	   	{ 
+	   	"category-name": "Mobile & Laptops"
+	   	 "length":3
+	   	 "values": ["Mobile","Desktop","Laptop"]
+	   	},
+	   	{ 
+	   	"category-name": "Plumbing"
+	   	 "length": 3
+	   	 "values": ["Bathroom","Sink","Toilets"]
+	   	},
+	   	{ 
+	   	"category-name": "Home Applicance"
+	   	 "length": 5 
+	   	 "values": ["Fan","AC","TV","Cooler","Washing-Machine"]
+	   	},
+	   	{ 
+	   	"category-name": "Home Applicance"
+	   	 "length": 5 
+	   	 "values": ["Fan","AC","TV","Cooler","Washing-Machine"]
+	   	},
+
+	   ]
+
+}
